@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run --spec \"cypress/integration/feature/*.feature\"",
+    "test": "node_modules/.bin/cypress run --spec \"cypress/integration/*.feature\"",
     "head": "npm run test -- --headed",
     "chrome": "npm run test -- --browser chrome",
     "record": "npm run test -- --record --key 8cfc12b9-e5e4-4ca7-9504-a6422dda8db1"
