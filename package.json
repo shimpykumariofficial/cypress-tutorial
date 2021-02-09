@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run --spec \"cypress/integration/*.feature\"",
+    "test": "node_modules/.bin/cypress run --spec \"cypress/integration/tests/*.feature\"",
     "head": "npm run test -- --headed",
     "chrome": "npm run test -- --browser chrome",
     "record": "npm run test -- --record --key 8cfc12b9-e5e4-4ca7-9504-a6422dda8db1"
@@ -22,6 +22,7 @@
   "devDependencies": {
     "cypress": "^6.4.0",
     "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-file-upload": "^5.0.2",
     "cypress-iframe": "^1.0.1"
   }
 }
