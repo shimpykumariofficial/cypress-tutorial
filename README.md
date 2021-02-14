@@ -67,6 +67,45 @@ oc new-project cypress-project
 - Once you login to Jenkins, you will be redirected to the homepage that looks like the following. In the next steps, you will be using Jenkins to demonstrate end to end testing.
 ![image](https://user-images.githubusercontent.com/36239840/107651735-49ddc980-6c99-11eb-9283-e7c08540f4d2.png)
 
+
+## Configure Jenkins
+
+- Create a freestyle project in Jenkins
+![image](https://user-images.githubusercontent.com/78303150/107881737-eeece200-6ee5-11eb-9ec0-db13c1270272.png)
+
+
+- Go To Manage Jenkins -> Manage Plugins -> Search Avaialble Plugins -> Install NodeJs Plugin
+![image](https://user-images.githubusercontent.com/78303150/107881731-ec8a8800-6ee5-11eb-9453-f36a2b4057e8.png)
+
+
+- Add HTML Publisher Plugin (It will install xvfb plugin)
+![image](https://user-images.githubusercontent.com/78303150/107881724-eac0c480-6ee5-11eb-940f-7a484781bfcd.png)
+
+
+- Once Nodejs plugin is installed, Go to Global Tool Configuration -> Add NodeJs Installation with all the npm packages to be installed
+![image](https://user-images.githubusercontent.com/78303150/107882452-ae8f6300-6ee9-11eb-9cf9-7b45f0fdf852.png)
+
+
+- Go To your Project -> Configure -> Source code Management and add the Github url
+![image](https://user-images.githubusercontent.com/78303150/107882501-03cb7480-6eea-11eb-8132-926723a62bda.png)
+
+
+- Build Environment -> Check the box "Provide Node and npm/bin folder path"
+![image](https://user-images.githubusercontent.com/78303150/107882528-265d8d80-6eea-11eb-8a55-f9a614ec1612.png)
+
+
+- Go To Build Environment -> Add Build -> Execute Shell And add below commands and Click Save.
+![image](https://user-images.githubusercontent.com/78303150/107882575-66bd0b80-6eea-11eb-899f-b231c1f3e6a6.png)
+
+- That's it. Click on Build Now -> And Console Output
+![image](https://user-images.githubusercontent.com/78303150/107881723-ea282e00-6ee5-11eb-80b4-6be4c21d1208.png)
+
+
+- Once successfully build you will be able to see Cypress report on Jenkins workspace 
+![image](https://user-images.githubusercontent.com/78303150/107881716-e694a700-6ee5-11eb-91e6-0fb60f9f404d.png)
+
+
+
 ## Summary
 
 In this tutorial, you created your first test with cypress and run them on Openshift Cluster.
