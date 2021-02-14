@@ -11,7 +11,7 @@ This tutorial aims to demonstrate the e2e tests using cypress tool.
 For this tutorial you will need:
 
 - Your own GitHub account
-- Sign up for your IBM Cloud account – https://ibm.biz/BdfFXA
+- Sign up for your IBM Cloud account – https://ibm.biz/BdfELM
 - Node.js: https://nodejs.org/en/download/
 - Visual Studio Code: https://code.visualstudio.com/download
 - Register for the live stream and access the replay – https://www.crowdcast.io/e/testing-with-cypress/register
