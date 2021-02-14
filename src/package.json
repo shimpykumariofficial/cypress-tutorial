@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cleanup": "rm -fr cypress/reports",
-    "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > mochawesome.json",
-    "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --charts true mochawesome.json",
-    "cy:report": "npm run cleanup && cypress run && npm run merge_reports && npm run mochawesome_report",
     "test": "node_modules/.bin/cypress run --spec \"cypress/integration/tests/*.feature\"",
-    "record": "npm run test -- --record --key 8cfc12b9-e5e4-4ca7-9504-a6422dda8db1"
+    "record": "npm run test -- --record --key 8cfc12b9-e5e4-4ca7-9504-a6422dda8db1",
+    "cy:report": "npm run record"
   },
   "repository": {
     "type": "git",

@@ -11,14 +11,6 @@
     "nonGlobalStepDefinitions": false,
     "stepDefinitions": "cypress/support/step_definitions/"
   },
-  "reporter": "mochawesome",
-  "reporterOptions": {
-    "reportDir": "cypress/reports/mochawesome-report",
-    "overwrite": false,
-    "html": false,
-    "json": true,
-    "timestamp": "mmddyyyy_HHMMss"
-  },
   "pluginsFile": "cypress/plugins/index.js",
   "supportFile": "cypress/support/index.js",
   "viewportWidth": 1100,
