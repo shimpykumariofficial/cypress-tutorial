@@ -1,0 +1,35 @@
+{
+  "name": "cypress-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rm -fr cypress/reports",
+    "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > mochawesome.json",
+    "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --charts true mochawesome.json",
+    "cy:report": "npm run cleanup && cypress run && npm run merge_reports && npm run mochawesome_report",
+    "test": "node_modules/.bin/cypress run --spec \"cypress/integration/tests/*.feature\"",
+    "record": "npm run test -- --record --key 8cfc12b9-e5e4-4ca7-9504-a6422dda8db1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimpykumariofficial/cypress-tutorial.git"
+  },
+  "author": "Shimpy Kumari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shimpykumariofficial/cypress-tutorial/issues"
+  },
+  "homepage": "https://github.com/shimpykumariofficial/cypress-tutorial#readme",
+  "devDependencies": {
+    "cypress": "^6.4.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-file-upload": "^5.0.2",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^8.3.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "yarn": "^1.22.10"
+  }
+}
