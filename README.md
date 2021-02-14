@@ -16,7 +16,7 @@ For this tutorial you will need:
 - Visual Studio Code: https://code.visualstudio.com/download
 - Register for the live stream and access the replay – https://www.crowdcast.io/e/testing-with-cypress/register
 - Red Hat OpenShift Cluster 4 on IBM Cloud. You can get it from
-  - URL: https://oc-knative.mybluemix.net/
+  - URL: https://oc-jenkins.mybluemix.net/
   - Key: oslab
 - oc CLI (can be downloaded from this link or you can use it at http://shell.cloud.ibm.com/.
 
