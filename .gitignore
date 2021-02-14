@@ -1,5 +1,11 @@
-/node_modules
-/cypress/screenshots
-/cypress/videos
-
+src/node_modules
+src/cypress/screenshots
+src/cypress/videos
+src/cypress/reports
+src/mochawesome-report
+src/mochawesome.json
+src/DockerFile
+src/docker-compose.yml
+build.sh
+yarn.lock
 /.vscode
