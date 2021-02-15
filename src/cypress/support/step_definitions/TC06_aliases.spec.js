@@ -24,7 +24,7 @@ And("I create a new post", () => {
 });
 
 Then("I mark unmark as favorite", () => {
-  cy.get("ul.navbar-nav").children().contains("QAMs").click();
+  cy.get("ul.navbar-nav").children().contains("shimpy_kumari").click();
   cy.contains("My Articles").should("be.visible");
   cy.get(".ion-heart").first().click();
   cy.contains("Favorited Articles").click();

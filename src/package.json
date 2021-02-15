@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node_modules/.bin/cypress run --spec \"cypress/integration/tests/*.feature\"",
     "chrome": "npm run test -- -b chrome",
-    "record": "npm run chrome -- --record --key 8cfc12b9-e5e4-4ca7-9504-a6422dda8db1",
+    "record": "npm run test -- --record --key 8cfc12b9-e5e4-4ca7-9504-a6422dda8db1",
     "cy:report": "npm run record"
   },
   "repository": {
